@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Picker</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <p id="emojiDisplay">Selected Emoji: <span id="selectedEmoji">❓</span></p>
+    <div>
+        <button id="openModal" class="open-btn" onclick="openModal()">Open Emoji Picker</button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Select Your Mood</h3>
+                <emoji-picker id="emojiPicker"></emoji-picker>
+            </div>
+        </div>
+    </div>
+
+</div>
+     <script src="index.js"></script>
+</body>
+</html>
